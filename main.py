@@ -29,5 +29,10 @@ async def echo(message: types.Message):
     # await message.answer_video(open('output/out.mp4', 'rb'))
 
 
+@dp.message_handler()
+async def video(message: types.Message):
+    pass
+
+
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
