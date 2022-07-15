@@ -26,12 +26,6 @@ async def cmd_start(message: types.Message):
 async def echo(message: types.Message):
     result = await vv.get_video(message.text, message)
     await message.answer(result)
-    # await message.answer_video(open('output/out.mp4', 'rb'))
-
-
-@dp.message_handler()
-async def video(message: types.Message):
-    pass
 
 
 if __name__ == '__main__':
